@@ -1,28 +1,25 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
-import { Tabs } from "expo-router";
-import TabBar from "../components/TabBar";
-import { Slot } from "expo-router";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect } from "react";
+import "react-native-reanimated";
 
-import "../global.css";
-import { SafeAreaView } from "react-native-safe-area-context";
-export { Slot };
+export { ErrorBoundary } from "expo-router";
 
-const _layout = () => {
-  return (
-    <Tabs
-      tabBar={(props) => <TabBar {...props} />}
-      screenOptions={{ headerShown: false }}
-    >
-      <Tabs.Screen name="Home" options={{ title: "Home" }}></Tabs.Screen>
-      <Tabs.Screen
-        name="Settings"
-        options={{ title: "Settings" }}
-      ></Tabs.Screen>
-    </Tabs>
-  );
+export const unstable_settings = {
+  initialRouteName: "(tabs)",
 };
 
-export default _layout;
+SplashScreen.preventAutoHideAsync();
 
-const styles = StyleSheet.create({});
+export default function RootLayout() {
+  return <RootLayoutNav />;
+}
+
+function RootLayoutNav() {
+  return (
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
