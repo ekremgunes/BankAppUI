@@ -3,15 +3,17 @@ import React from "react";
 import { Image } from "react-native";
 import { getCardImage } from "../../utils/getCardProviderImage";
 
-const Card = () => {
-  const cardInfo = {
-    currency: "$",
-    accountNo: "** 4242",
-    ibanNo: "**** 9458",
-    balance: "16,612.55",
-    bankName: "Ziraat Bank",
-    cardBrand: "Master",
-  };
+//fake data
+const cardInfo = {
+  currency: "$",
+  accountNo: "** 4242",
+  ibanNo: "**** 9458",
+  balance: "16,612.55",
+  bankName: "Ziraat Bank",
+  cardBrand: "Master",
+};
+
+const Card = () => { 
 
   const walletAddPress = () => {
     console.log("clicked card add");

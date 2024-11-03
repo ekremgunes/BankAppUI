@@ -5,7 +5,7 @@ import { TouchableOpacity } from "react-native";
 const ReferralAndRewardsSection = () => {
   const learnMore = () => {};
   return (
-    <View className="bg-stone-900 rounded-3xl flex-1 mx-5 my-3 p-4 h-44 flex-col justify-between">
+    <View className="overflow-hidden bg-stone-900 rounded-3xl flex-1 mx-5 my-3 p-4 h-44 flex-col justify-between">
       <View>
         <Text className="text-white tracking-wide font-bold text-2xl">
           Refer and Earn
@@ -22,6 +22,12 @@ const ReferralAndRewardsSection = () => {
           Learn More
         </Text>
       </TouchableOpacity>
+      <Image
+        style={{ left: "53%", width: "74%" }}
+        resizeMode="cover"
+        className="absolute object-cover h-44"
+        source={require("../../assets/images/referer_icon2.png")}
+      ></Image>
     </View>
   );
 };

@@ -18,8 +18,8 @@ const _layout = () => {
       <Tabs.Screen name="index" options={{ title: "index" }}></Tabs.Screen>
       <Tabs.Screen name="Wallet" options={{ title: "Wallet" }}></Tabs.Screen>
       <Tabs.Screen
-        name="Statistics"
-        options={{ title: "Statistics" }}
+        name="Transactions"
+        options={{ title: "Transactions" }}
       ></Tabs.Screen>
       <Tabs.Screen name="Home" options={{ title: "Home" }}></Tabs.Screen>
       <Tabs.Screen name="Contact" options={{ title: "Contact" }}></Tabs.Screen>

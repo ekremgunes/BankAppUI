@@ -2,11 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import { TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-
-// #010101 - main
-// #191919 - second
-// #282828 - third
-// #393939 - fourth
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 const TabBar = ({ state, descriptors, navigation }) => {
   return (
@@ -21,7 +17,11 @@ const TabBar = ({ state, descriptors, navigation }) => {
             ? options.title
             : route.name;
 
-        if (!["Home", "Settings", "Wallet", "Contact", "Statistics"].includes(route.name))
+        if (
+          !["Home", "Settings", "Wallet", "Contact", "Transactions"].includes(
+            route.name
+          )
+        )
           return null;
 
         const isFocused = state.index === index;
@@ -68,11 +68,11 @@ const TabBar = ({ state, descriptors, navigation }) => {
               />
             );
             break;
-          case "Statistics":
+          case "Transactions":
             content = (
-              <Ionicons
-                name="bar-chart-outline"
-                size={24}
+              <FontAwesome6
+                name="arrow-right-arrow-left"
+                size={21}
                 color={isFocused ? "#fff" : "#b2b2b2"}
               />
             );
