@@ -46,7 +46,7 @@ const Transactions = () => {
         <Text className="text-stone-500 tracking-wide">Spent in october</Text>
       </View>
 
-      <View className="flex-row justify-start">{renderTransactions()}</View>
+      <View className="flex-row justify-start mr-1">{renderTransactions()}</View>
     </TouchableOpacity>
   );
 };

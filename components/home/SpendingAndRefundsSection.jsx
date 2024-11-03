@@ -5,7 +5,7 @@ import Cashbacks from './sectionContents/Cashbacks'
 
 const SpendingAndRefundsSection = () => {
   return (
-    <View className="my-2 mx-5 flex-row items-center justify-between">
+    <View className="my-3 mx-5 flex-row items-center justify-between">
       
       <Transactions></Transactions>
       
