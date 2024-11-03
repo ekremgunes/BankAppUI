@@ -18,7 +18,7 @@ const SearchInput = ({ val = "", set, handler }) => {
   };
 
   return (
-    <View className="flex-1 mx-4 flex-row items-center justify-center bg-stone-800 p-2 rounded-2xl">
+    <View className="flex-1 mx-4 flex-row items-center justify-center bg-stone-900 p-2 rounded-2xl">
       
       <TouchableOpacity onPress={submitHandler} className="px-1">
         <Feather name="search" size={24} color="#78716c" />

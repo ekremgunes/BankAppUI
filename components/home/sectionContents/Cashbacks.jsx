@@ -33,7 +33,7 @@ const Cashbacks = () => {
   return (
     <TouchableOpacity
       onPress={() => {}}
-      className="bg-stone-800 rounded-3xl flex-1 p-4 h-32 flex-col justify-between"
+      className="bg-stone-900 rounded-3xl flex-1 p-4 h-32 flex-col justify-between"
     >
       <View>
         <Text className="text-white tracking-wide font-bold text-xl">

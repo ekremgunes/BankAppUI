@@ -12,7 +12,7 @@ const QuickActions = () => {
     <View className="flex-col h-32 justify-between w-16 mr-2">
       <TouchableOpacity
         style={{ borderRadius: 18 }}
-        className="bg-stone-800 flex-1 justify-center items-center"
+        className="bg-stone-900 flex-1 justify-center items-center"
         onPress={scanQR}
       >
         <MaterialCommunityIcons name="qrcode-scan" size={24} color="white" />
@@ -22,7 +22,7 @@ const QuickActions = () => {
 
       <TouchableOpacity
         style={{ borderRadius: 18 }}
-        className="bg-stone-800 flex-1 justify-center items-center"
+        className="bg-stone-900 flex-1 justify-center items-center"
         onPress={create}
       >
         <MaterialCommunityIcons name="plus" size={32} color="white" />

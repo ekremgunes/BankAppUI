@@ -10,7 +10,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 
 const TabBar = ({ state, descriptors, navigation }) => {
   return (
-    <View className="absolute flex-row bottom-0 justify-around items-center bg-[#191919] px-2 py-1.5 m-4 rounded-full">
+    <View className="absolute flex-row bottom-0 justify-around items-center bg-stone-900 px-2 py-1.5 m-4 rounded-full">
       {state.routes.map((route, index) => {
         var content = "";
         const { options } = descriptors[route.key];
@@ -41,7 +41,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
         switch (label) {
           case "Home":
             content = (
-              <View className="bg-[#393939] p-2.5 px-3 justify-self-center self-center rounded-2xl">
+              <View className="bg-stone-700 p-2.5 px-3 justify-self-center self-center rounded-2xl">
                 <Ionicons
                   name="home-outline"
                   size={26}
