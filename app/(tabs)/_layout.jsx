@@ -5,14 +5,14 @@ import { Slot } from "expo-router";
 
 import "../../global.css";
 import { SafeAreaView } from "react-native-safe-area-context";
-import TabBar from "../../components/TabBar";
+import TabBar from "../../components/common/TabBar";
 export { Slot };
 
 const _layout = () => {
   return (
     <Tabs
       tabBar={(props) => <TabBar {...props} />}
-      screenOptions={{ headerShown: false }}
+      screenOptions={{ headerShown: false, tabBarHideOnKeyboard: true }}
       initialRouteName="index"
     >
       <Tabs.Screen name="index" options={{ title: "index" }}></Tabs.Screen>

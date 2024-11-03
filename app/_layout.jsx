@@ -20,6 +20,8 @@ function RootLayoutNav() {
   return (
     <Stack>
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="Notifications" options={{ headerShown: false }} />
+      <Stack.Screen name="Menu" options={{ headerShown: false }} />
     </Stack>
   );
 }
