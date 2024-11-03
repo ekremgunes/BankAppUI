@@ -16,7 +16,7 @@ const Header = () => {
   };
   
   return (
-    <View className="flex-row w-full p-4 items-center justify-between border">
+    <View className="flex-row w-full p-5 items-center justify-between border">
       <Avatar></Avatar>
       <SearchInput />
 
