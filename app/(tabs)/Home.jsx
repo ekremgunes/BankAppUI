@@ -6,16 +6,19 @@ import Card from "../../components/home/Card";
 import SpendingAndRefundsSection from "../../components/home/SpendingAndRefundsSection";
 import UserActionsAndInfoSection from "../../components/home/UserActionsAndInfoSection";
 import ReferralAndRewardsSection from "../../components/home/ReferralAndRewardsSection";
+import { ScrollView } from "react-native";
 
 const Home = () => {
   return (
     <View className="flex-1 bg-black py-3">
       <SafeAreaView />
       <Header />
-      <Card />
-      <SpendingAndRefundsSection />
-      <UserActionsAndInfoSection />
-      <ReferralAndRewardsSection />
+      <ScrollView>
+        <Card />
+        <SpendingAndRefundsSection />
+        <UserActionsAndInfoSection />
+        <ReferralAndRewardsSection />
+      </ScrollView>
     </View>
   );
 };
