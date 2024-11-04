@@ -4,7 +4,7 @@ import Header from "../../components/transactions/Header";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native";
 import History from "../../components/transactions/History";
-import { DonutChartContainer } from '../../components/transactions/DonutCharts';
+import DonutChartContainer from '../../components/transactions/DonutCharts';
 
 
 const Transactions = () => {

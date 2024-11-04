@@ -14,5 +14,5 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "nativewind-env.d.ts"
-, "app/Index.jsx"  ]
+, "app/Index.jsx", "components/transactions/chart/DonutChart.jsx", "components/transactions/chart/DonutPath.jsx", "components/transactions/DonutCharts.jsx"  ]
 }
