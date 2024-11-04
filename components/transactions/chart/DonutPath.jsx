@@ -36,6 +36,7 @@ const DonutPath = ({ radius, gap, strokeWidth, outerStrokeWidth, color, decimals
       strokeCap="round"
       start={start}
       end={end}
+      
     />
   );
 };

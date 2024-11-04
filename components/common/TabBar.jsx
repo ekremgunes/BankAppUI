@@ -41,7 +41,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
         switch (label) {
           case "Home":
             content = (
-              <View className="bg-stone-700 p-2.5 px-3 justify-self-center self-center rounded-2xl">
+              <View className="bg-stone-800 p-2.5 px-3 justify-self-center self-center rounded-2xl">
                 <Ionicons
                   name="home-outline"
                   size={26}

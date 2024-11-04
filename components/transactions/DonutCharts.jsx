@@ -12,11 +12,11 @@ const GAP = 0.045;
 
 const DonutChartContainer = () => {
   const spents = [
-    { category: "Food", spent: 800, color: "#fe769c" },
-    { category: "Transport", spent: 500, color: "#46a0f9" },
-    { category: "Entertainment", spent: 600.12, color: "#c3f439" },
-    { category: "Shopping", spent: 400, color: "#88dabc" },
-    { category: "Bills", spent: 390, color: "#e43433" },
+    { category: "Spotify", spent: 180, color: "#16a34aeb" },
+    { category: "Entertainment", spent: 370.12, color: "yellow" },
+    { category: "Shopping", spent: 600, color: "#8b5cf6" },
+    { category: "Bills", spent: 390, color: "red" },
+    { category: "Souvenir", spent: 225, color: "cyan" },
   ];
 
   const n = spents.length;
@@ -41,7 +41,7 @@ const DonutChartContainer = () => {
   }, []);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView className="bg-black pb-5">
       <ScrollView
         contentContainerStyle={{ alignItems: "center" }}
         showsVerticalScrollIndicator={false}
@@ -75,10 +75,6 @@ const DonutChartContainer = () => {
 export default DonutChartContainer;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
   chartContainer: {
     width: RADIUS * 2,
     height: RADIUS * 2,
