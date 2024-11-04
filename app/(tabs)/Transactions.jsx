@@ -3,14 +3,19 @@ import React from "react";
 import Header from "../../components/transactions/Header";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native";
+import History from "../../components/transactions/History";
+import { DonutChartContainer } from '../../components/transactions/DonutCharts';
+
 
 const Transactions = () => {
   return (
-    <View className="flex-1 bg-black py-3">
-      <SafeAreaView />
+    <SafeAreaView className="flex-1 bg-black py-3">
       <Header />
-      <ScrollView></ScrollView>
-    </View>
+      <ScrollView>
+        <DonutChartContainer/>
+        <History/>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
