@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Feather from "@expo/vector-icons/Feather";
 import { TouchableOpacity } from "react-native";
 
-const SearchInput = ({ val = "", set, handler }) => {
+const SearchInput = ({ val = "", set, handler,direction="flex-row" }) => {
   const [value, setValue] = useState(val);
 
   const changeHandler = (e) => {
@@ -18,14 +18,14 @@ const SearchInput = ({ val = "", set, handler }) => {
   };
 
   return (
-    <View className="flex-1 mx-4 flex-row items-center justify-center bg-stone-900 p-2 rounded-2xl">
+    <View className={`flex-1 ${direction} max-h-12 mx-4 items-center justify-center bg-stone-900 p-2 rounded-2xl`}>
       
-      <TouchableOpacity onPress={submitHandler} className="px-1">
+      <TouchableOpacity onPress={submitHandler} className="px-1 order-last">
         <Feather name="search" size={24} color="#78716c" />
       </TouchableOpacity>
 
       <TextInput
-        className="color-white flex-1 ml-1"
+        className="color-white flex-1 ml-1 order-first"
         onChangeText={changeHandler}
         onSubmitEditing={submitHandler}
         placeholderTextColor={"#78716c"}
