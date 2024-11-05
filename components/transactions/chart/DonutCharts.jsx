@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSharedValue, withTiming } from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
-import DonutChart from "./chart/DonutChart";
-import { calculatePercentage } from "../../utils/calculatePercentage";
+import DonutChart from "./DonutChart";
+import { calculatePercentage } from "../../../utils/calculatePercentage";
 
 const RADIUS = 160;
 const STROKE_WIDTH = 26;

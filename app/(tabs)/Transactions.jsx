@@ -3,8 +3,8 @@ import React from "react";
 import Header from "../../components/transactions/Header";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native";
-import History from "../../components/transactions/History";
-import DonutChartContainer from "../../components/transactions/DonutCharts";
+import History from "../../components/transactions/history/History";
+import DonutChartContainer from "../../components/transactions/chart/DonutCharts";
 
 const Transactions = () => {
   return (
