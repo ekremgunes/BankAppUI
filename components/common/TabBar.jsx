@@ -33,13 +33,13 @@ const TabBar = ({ state, descriptors, navigation }) => {
   };
 
   useEffect(() => {
-  console.log("active:",activeTab)
+  console.log("active screen:",activeTab)
   }, [activeTab])
 
   return (
     <View
-      className={` flex-row bottom-0 justify-around items-center px-2 py-2 m-4 rounded-full ${
-        activeTab === "Settings" ? "bg-black m-0 px-6 pb-6 rounded-none" : "bg-stone-900 absolute"
+      className={` flex-row bottom-0 justify-around items-center px-2 py-2  rounded-full ${
+        activeTab === "Settings" ? "bg-black m-0 px-6 pb-6 rounded-none" : "bg-stone-900 absolute m-4"
       }`}
     >
       {state.routes.map((route, index) => {

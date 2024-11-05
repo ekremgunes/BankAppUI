@@ -14,21 +14,21 @@ const AccountSection = () => {
         props={{
           icon: "manage-accounts",
           title: "Profile & Accounts",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
       <SectionItem
         props={{
           icon: "security",
           title: "Security",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
       <SectionItem
         props={{
           icon: "subscriptions",
           title: "Subscriptions",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
     </Section>

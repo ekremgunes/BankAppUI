@@ -24,12 +24,12 @@ const categories = [
 const TransactionItem = ({ transaction }) => {
   if (!transaction) return null;
 
-  const { title, amount, isSpent, categoryName, date, desc } = transaction;
+  const { title, amount, isSpent,id, categoryName, date, desc } = transaction;
   const category = categories.find((x) => x.name == categoryName);
   const icon = category?.icon;
   const color = category?.color || "#57534e";
   return (
-    <TouchableOpacity className="flex-row items-center h-20 border-b border-b-stone-500/50">
+    <TouchableOpacity key={id} className="flex-row items-center h-20 border-b border-b-stone-500/50">
       <View
         style={{ backgroundColor: color }}
         className={`rounded-full w-14 h-14 justify-center items-center`}

@@ -2,6 +2,7 @@ import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Image } from "react-native";
 import { getCardImage } from "../../utils/getCardProviderImage";
+import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
 
 //fake data
 const cardInfo = {
@@ -21,7 +22,7 @@ const Card = () => {
   };
 
   return (
-    <View style={{ height: 200 }} className="bg-red-50  my-3 mx-5 rounded-3xl">
+    <Animated.View entering={FadeInDown.duration(600).delay(150).springify().damping(10)} style={{ height: 200 }} className="bg-red-50  my-3 mx-5 rounded-3xl">
       <Image
         style={{ height: 200, width: "100%" }}
         resizeMode="cover"
@@ -64,7 +65,7 @@ const Card = () => {
           </View>
         </View>
       </View>
-    </View>
+    </Animated.View>
   );
 };
 

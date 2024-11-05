@@ -20,7 +20,7 @@ const Settings = () => {
 
       <ScrollView
         contentContainerStyle={{ flexGrow: 1 }}
-        className="flex-1"
+        className="flex-1 mt-3"
       >
         <SectionList></SectionList>
       </ScrollView>

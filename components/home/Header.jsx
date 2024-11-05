@@ -7,6 +7,7 @@ import { TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useNavigation } from "expo-router";
 import { ROUTES } from '../../constants/Routes';
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 const Header = () => {
   const navigation = useNavigation();
@@ -16,7 +17,7 @@ const Header = () => {
   };
   
   return (
-    <View className="flex-row w-full p-5 items-center justify-between border">
+    <Animated.View  className="flex-row w-full p-5 items-center justify-between border">
       <Avatar></Avatar>
       <SearchInput />
 
@@ -29,7 +30,7 @@ const Header = () => {
           <Feather name="menu" size={25} color="white" />
         </TouchableOpacity>
       </View>
-    </View>
+    </Animated.View>
   );
 };
 

@@ -14,21 +14,21 @@ const PersonalizeSection = () => {
         props={{
           icon: "language",
           title: "Language",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
       <SectionItem
         props={{
           icon: "qr-code",
           title: "Share QR",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
       <SectionItem
         props={{
           icon: "dark-mode",
           title: "Dark Mode",
-          action: navigation.navigate(ROUTES.TABS.Home),
+          action: ()=>navigation.navigate(ROUTES.TABS.Home),
         }}
       ></SectionItem>
     </Section>

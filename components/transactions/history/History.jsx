@@ -5,6 +5,7 @@ import TransactionTabs from "./TransactionTabs";
 
 const fakeTransactions = [
   {
+    id:1,
     title: "Ekrem Güneş",
     amount: 128,
     isSpent: false,
@@ -13,6 +14,7 @@ const fakeTransactions = [
     desc: "Thanks for dinner",
   },
   {
+    id:2,
     title: "Shopping",
     amount: 45,
     isSpent: true,
@@ -21,6 +23,7 @@ const fakeTransactions = [
     desc: "Grocery store",
   },
   {
+    id:3,
     title: "Spotify Subscription",
     amount: 9.99,
     isSpent: true,
@@ -29,6 +32,7 @@ const fakeTransactions = [
     desc: "Monthly subscription",
   },
   {
+    id:4,
     title: "Payment Received",
     amount: 200,
     isSpent: false,
@@ -45,7 +49,7 @@ const History = () => {
     return (
       <View>
         {fakeTransactions.map((transaction) => (
-          <TransactionItem transaction={transaction} />
+          <TransactionItem key={transaction.id} transaction={transaction} />
         ))}
       </View>
     );

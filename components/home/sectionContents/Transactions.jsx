@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 //fake data
 const transactions = [
@@ -35,8 +36,8 @@ const Transactions = () => {
   };
 
   return (
-    <TouchableOpacity
-      onPress={{}}
+    <Animated.View
+      entering={FadeInDown.duration(600).delay(200).springify().damping(10)}
       className="bg-stone-900 rounded-3xl flex-1 p-4 h-32 flex-col justify-between"
     >
       <View>
@@ -46,8 +47,10 @@ const Transactions = () => {
         <Text className="text-stone-500 tracking-wide">Spent in october</Text>
       </View>
 
-      <View className="flex-row justify-start mr-1">{renderTransactions()}</View>
-    </TouchableOpacity>
+      <View className="flex-row justify-start mr-1">
+        {renderTransactions()}
+      </View>
+    </Animated.View>
   );
 };
 

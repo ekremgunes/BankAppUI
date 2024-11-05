@@ -1,11 +1,15 @@
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 const ReferralAndRewardsSection = () => {
   const learnMore = () => {};
   return (
-    <View className="overflow-hidden bg-stone-900 rounded-3xl flex-1 mx-5 my-3 p-4 h-44 flex-col justify-between">
+    <Animated.View
+      entering={FadeInDown.duration(600).delay(425).springify().damping(10)}
+      className="overflow-hidden bg-stone-900 rounded-3xl flex-1 mx-5 my-3 p-4 h-44 flex-col justify-between"
+    >
       <View>
         <Text className="text-white tracking-wide font-bold text-2xl">
           Refer and Earn
@@ -28,7 +32,7 @@ const ReferralAndRewardsSection = () => {
         className="absolute object-cover h-44"
         source={require("../../assets/images/referer_icon2.png")}
       ></Image>
-    </View>
+    </Animated.View>
   );
 };
 

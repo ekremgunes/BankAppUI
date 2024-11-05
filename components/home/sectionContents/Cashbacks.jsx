@@ -5,6 +5,7 @@ import amazon_icon from "../../../assets/images/amazon_icon.png";
 import spotify_icon from "../../../assets/images/spotify_icon.png";
 import tesla_icon from "../../../assets/images/tesla_icon.png";
 import ikas_icon from "../../../assets/images/ikas_icon.jpg";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 const Cashbacks = () => {
   const companies = [
@@ -31,8 +32,8 @@ const Cashbacks = () => {
   };
 
   return (
-    <TouchableOpacity
-      onPress={() => {}}
+    <Animated.View
+    entering={FadeInDown.duration(600).delay(250).springify().damping(10)}
       className="bg-stone-900 rounded-3xl flex-1 p-4 h-32 flex-col justify-between"
     >
       <View>
@@ -44,7 +45,7 @@ const Cashbacks = () => {
       <View className="flex-row justify-start items-center ml-2">
         {renderCashBacks()}
       </View>
-    </TouchableOpacity>
+    </Animated.View>
   );
 };
 
